@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/mainbg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/titlebgresize">
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/negative"
+                    android:text="@string/reserve_your_seats"
+                    android:textSize="40sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewBookiNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bresize"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:drawableStart="@drawable/user"
+                android:autofillHints="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextGroupSize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/group"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="@string/group_size"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/group"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:id="@+id/editTextMobileNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:layout_weight="2"
+                    android:drawableStart="@drawable/phone"
+                    android:autofillHints="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewSeatingPref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/seating_preference"
+                android:textSize="20sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonSmokingArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOff="@string/non_smoking_area"
+                android:textOn="@string/smoking_area" />
+
+            <TextView
+                android:id="@+id/textViewDateTimeReserve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/date_and_time_of_reservation"
+                android:textSize="20sp" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                tools:targetApi="lollipop" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:timePickerMode="spinner"
+                tools:targetApi="lollipop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonConfirm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/confirm"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/buttonReset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reset"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

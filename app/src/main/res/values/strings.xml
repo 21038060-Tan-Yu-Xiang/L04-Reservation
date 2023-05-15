@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">L04-Reservation</string>
+    <string name="reserve_your_seats">Reserve Your Seats!</string>
+    <string name="name">Name</string>
+    <string name="group_size">Group Size</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="seating_preference">Seating Preference</string>
+    <string name="non_smoking_area">Non-Smoking Area</string>
+    <string name="smoking_area">Smoking Area</string>
+    <string name="date_and_time_of_reservation">Date and Time of Reservation</string>
+    <string name="confirm">Confirm</string>
+    <string name="reset">Reset</string>
+</resources>
